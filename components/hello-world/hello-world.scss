@@ -1,0 +1,164 @@
+body {
+  background: url(../../assets/images/img6.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.forgetDiv{
+  margin-top: 50px;
+}
+.forgetPassBtn{
+  height: 50px;
+}
+.linkSend{
+  height: 100px;
+}
+.homeBg{
+  background-color: rgba(210, 13, 6, 0.12);
+}
+.homeNavBar{
+ padding-right: 20px;
+  padding-left: 5px;
+}
+.homeText{
+ font-family: cursive;
+  font-size: 15px;
+}
+.registrationBtnPosition{
+  height: 60px;
+  margin-bottom: 0px;
+}
+.stepBtnPosition{
+  height: 60px;
+  margin-bottom: 0px;
+}
+
+.navbar-header {
+  float: none;
+}
+.navbar-toggle {
+  display: block;
+}
+.navbar-collapse {
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar-nav {
+  float: none!important;
+  margin: 7.5px -15px;
+}
+.navbar-nav>li {
+  float: none;
+}
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tdPad{
+  padding: 5px;
+}
+
+div table tbody tr td{
+  padding: 1px 1px;
+}
+div table thead tr th{
+  padding: 5px 1px;
+}
+
+.my-datepicker .form-control {
+  height: 10px;
+  padding: 11px;
+}
+
+.my-datepicker .btn {
+  padding: 0.5px 10px;
+}
+.transbox {
+  width: 500px;
+  height: 500px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  background-color: #95ccbe;
+  border-radius: 20px;
+  padding: 2%;
+}
+.dropdown-menu table {
+  height: 300px;
+  width: 350px;
+}
+
+/* BASIC STYLINGS
+============================================================================= */
+body{
+  padding-top:20px;
+}
+pre{
+  margin-bottom:20px;
+}
+
+/* form styling */
+#form-container {
+  background:white; margin-bottom:20px;
+  border-radius:5px; height: auto
+}
+#form-container .page-header{
+  background:#e66a6a;
+  margin:0;
+  padding:5px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+}
+
+/* validation */
+input.ng-invalid.ng-touched{
+  background-color: #FA787E;
+}
+input.ng-valid.ng-touched{
+  background-color: #78FA89;
+}
+
+/* numbered buttons */
+#status-buttons{
+
+}
+#status-buttons a {
+  color:#FFF;
+  display:inline-block;
+  font-size:12px;
+  margin-right:10px;
+  text-align:center;
+  text-transform:uppercase;
+}
+#status-buttons a:hover{
+  text-decoration:none;
+}
+#status-buttons span{
+  background:#080808;
+  display:block;
+  height:30px;
+  margin:0 auto 10px;
+  padding-top:5px;
+  width:30px;
+  border-radius:50%;
+}
+
+/* active buttons */
+#status-buttons a.active span{
+  background:#00BC8C;
+}
+
+/* ANIMATION STYLINGS
+============================================================================= */
+#signup-form {
+  position:relative;
+  min-height:300px;
+  overflow:hidden;
+  padding:10px;
+}
+
+

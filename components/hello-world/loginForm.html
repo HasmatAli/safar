@@ -1,0 +1,45 @@
+<div ng-show="show">
+    <form class="login-form" name="signupForm" id="signup-form">
+        <div class="row">
+            <div class="input-field col-sm-12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="userid" type="text" class="validate" name="userid" ng-model="userid" required/>
+                <label for="userid">User ID</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col-sm-12">
+                <i class="material-icons prefix">dialpad</i>
+                <input id="password" type="password" class="validate" name="password" ng-model="password" required/>
+                <label for="password">Password</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col-sm-12">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col-sm-12">
+                <a class="btn waves-effect waves-light col s6 offset-s3" ng-click="login(userid,password)">Login</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6 m6 l6">
+                <p class="margin medium-small">
+                    <a ui-sref="default.registraion"
+                       ng-click="registration(); showContainer()">Register Now!
+                    </a>
+                </p>
+            </div>
+            <div class="input-field col s6 m6 l6">
+                <p class="margin right-align medium-small">
+                    <a ui-sref="default.forget"
+                       ng-click="forget(); showContainer()">Forgot password ?
+                    </a>
+                </p>
+            </div>
+        </div>
+    </form>
+</div>

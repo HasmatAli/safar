@@ -1,0 +1,69 @@
+<div>
+    <div class="row">
+        <form class="col-sm-12" name="signupForm">
+            <div class="row">
+                <div class="input-field col-sm-12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="fname" type="text" class="validate" name="fname" ng-model="fname" required/>
+                    <label for="fname">First Name</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col-sm-12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="lname" type="text" class="validate" name="lname" ng-model="lname" required/>
+                    <label for="lname">Last Name</label>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="input-field col-sm-12">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="email" class="validate" name="emailid" ng-model="emailid" required/>
+                    <label for="email" data-error="wrong">Email</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col-sm-12">
+                    <i class="material-icons prefix">dialpad</i>
+                    <input id="pass" type="password" class="validate" maxlength="5" name="pass" ng-model="pass"
+                           required/>
+                    <label for="email">Password</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col-sm-12">
+                    <i class="material-icons prefix">dialpad</i>
+                    <input id="rpass" type="password" class="validate" maxlength="5" name="rpass" ng-model="rpass"
+                           required/>
+                    <label for="rpass" data-error="{{wrognPass}}">Repeat Password</label>
+                    <span ng-if="pass != rpass" class="text-danger">{{wrognPass}}</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col-sm-12">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="phone" type="text" class="validate" maxlength="10" name="phone" ng-model="phone"
+                           required/>
+                    <label for="phone">Phone</label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="form-group row registrationBtnPosition">
+        <div class="col-sm-offset-5 col-xs-offset-4 col-md-offset-4 col-lg-offset-5 ">
+            <button class="waves-effect waves-light btn" ui-sref="default.registationDone"
+                    ng-disabled="signupForm.$invalid" ng-click="firstForm(fname, lname, emailid, pass, rpass, phone)">
+                Submit
+                <span class="glyphicon glyphicon glyphicon-ok-sign"></span>
+            </button>
+        </div>
+    </div>
+</div>

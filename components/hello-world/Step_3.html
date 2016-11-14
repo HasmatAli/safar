@@ -1,0 +1,62 @@
+<div class="row">
+    <form class="col-sm-12 col-lg-12">
+        <div class="row">
+            <div>
+                <table class="col-xs-4 col-sm-12 col-md-12 col-lg-12 table-condensed">
+                    <thead class="thead-inverse">
+                    <tr class="text-success">
+                        <th class="text-success">Booking Details :-</th>
+                    </tr>
+                    </thead>
+
+                    <tbody class="text-center">
+                    <tr>
+                        <td>Name :</td>
+                        <td>{{firstName}} {{lastName}}</td>
+                    </tr>
+                    <tr>
+                        <td>Email ID :</td>
+                        <td>{{emailid}}</td>
+                    </tr>
+                    <tr>
+                        <td>Phone No. :</td>
+                        <td>{{phone}}</td>
+                    </tr>
+                    <tr>
+                        <td>Address :</td>
+                        <td>{{address}}</td>
+                    </tr>
+                    <tr>
+                        <td>Departure Date :</td>
+                        <td>{{departureDate}}</td>
+                    </tr>
+                    <tr>
+                        <td>Return Date :</td>
+                        <td>{{returnDate}}</td>
+                    </tr>
+                    <tr>
+                        <td class="text-danger pull-left">Status :-</td>
+                        <td class="text-success text-left">Ticket Successfully Booked...</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="input-field">
+                                <a class="btn waves-effect waves-light col-xs-10 col-sm-12 col-md-6 col-lg-6"
+                                   ng-click="printFormDetails()">
+                                    Print <span class="glyphicon glyphicon-print"></span></a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-field">
+                                <a class="btn waves-effect waves-light col-xs-7 col-sm-12 col-md-6 col-lg-6"
+                                   ng-click="sendMail()">
+                                    Email <span class="glyphicon glyphicon-envelope"></span></a>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>

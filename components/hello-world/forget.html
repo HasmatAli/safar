@@ -1,0 +1,40 @@
+<div ng-show="visible">
+    <div class="row forgetDiv">
+        <form class="col-sm-12">
+            <p class="text-success text-center">Please enter register email ID to get <span class="text-danger">
+                Reset Link</span></p>
+            <div class="row">
+                <div class="input-field col-sm-12">
+                    <i class="material-icons prefix">email</i>
+                    <input id="mail" type="text" name="mail" ng-model="address" class="validate" required>
+                    <label for="mail">Email Address</label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="row forgetPassBtn">
+        <div class="col-xs-6 col-sm-6 ">
+            <a class="waves-effect waves-light btn pull-left" ng-click="sendForgetPassword()">
+                Send Email <span class="glyphicon glyphicon-send"></span>
+            </a>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 ">
+            <a ui-sref="default.login" class="waves-effect waves-light btn pull-right">
+                cancel <span class="glyphicon glyphicon-remove"></span>
+            </a>
+        </div>
+    </div>
+</div>
+<div ng-hide="text">
+    <h5 class="text-center linkSend">
+        Change password link has been sent to Registered Email
+        <span class="text-danger">{{address}}</span> Please check inbox</h5>
+    <div class="row">
+        <div class="input-field col-sm-12">
+            <p class="margin medium-small">To Login:<a ui-sref="default.login" ng-click="showContainer()">
+                Click here</a></p>
+        </div>
+    </div>
+</div>

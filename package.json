@@ -1,0 +1,35 @@
+{
+  "name": "safar",
+  "version": "1.0.0",
+  "description": "my app",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install",
+    "build": "webpack --progress",
+    "build-unminified": "cross-env UNMINIFIED=true webpack --progress",
+    "watch": "webpack --watch",
+    "watch-unminified": "cross-env UNMINIFIED=true webpack --watch",
+    "startMailServer": "node mailer",
+    "release": "cross-env MODE=release webpack --progress",
+    "ci": "cross-env NAMES=release* MODE=release webpack"
+  },
+  "keywords": [],
+  "author": "Hasmat Ali",
+  "license": "ISC",
+  "dependencies": {
+    "airports": "^1.0.0",
+    "angular-material": "^1.1.1",
+    "api-check": "7.5.5",
+    "bootstrap": "^3.3.7",
+    "express": "^3.20.2",
+    "materialize-css": "^0.97.7",
+    "sendmail": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-plugin-add-module-exports": "0.1.1",
+    "babel-preset-es2015": "6.3.13",
+    "ng-autocomplete": "^1.0.0",
+    "webpack-angularity-solution": "^1.2.0"
+  }
+}

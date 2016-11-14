@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col s12 text-center">
+        <table class="striped">
+            <thead>
+            <tr>
+                <th class="text-success">Registration Details -</th>
+            </tr>
+            </thead>
+
+            <tbody class="text-center">
+            <tr>
+                <td>Name :</td>
+                <td>{{firstName}} {{lastName}}</td>
+            </tr>
+            <tr>
+                <td>Email ID :</td>
+                <td>{{emailid}}</td>
+            </tr>
+            <tr>
+                <td>Phone No :</td>
+                <td>{{phone}}</td>
+            </tr>
+            <tr>
+                <td class="text-danger pull-left">Status :-</td>
+                <td class="text-success pull-right">Registration Done Successfully...</td>
+            </tr>
+            <div class="row">
+                <div class="input-field col-sm-12">
+                    <p class="margin medium-small">To Login:<a ui-sref="default.login" ng-click="showContainer()">
+                        Click here</a>
+                    </p>
+                </div>
+            </div>
+            </tbody>
+        </table>
+    </div>
+</div>

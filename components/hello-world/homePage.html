@@ -1,0 +1,29 @@
+<nav class="navbar navbar-light homeBg">
+    <div class="nav-wrapper col-sm-12">
+        <a class="navbar-brand pull-left" ui-sref="default.login"
+           style="font-family: cursive; font-size: 35px; line-height: 20px; padding: 10px;">Safar</a>
+        <ul>
+            <li><span class="homeText"> hai suhana...</span>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav">
+            <li class="navbar-link pull-right"><a ui-sref="default.Step-1" ng-click="showContainer(); ">Book Ticket</a>
+            </li>
+            <li class="navbar-link pull-right"><a ui-sref="default.login" ng-click="showContainer()">Login</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div ng-hide="flag" class="row" style="margin-top: 5%;">
+    <div class="col-sm-10 col-sm-offset-1 col-lg-6 col-lg-offset-3">
+        <div id="form-container">
+            <div class="page-header text-center">
+                <h2>{{pageTitle}}</h2>
+            </div>
+            <div id="form-views" ui-view></div>
+            </form>
+        </div>
+    </div>
+</div>
+
