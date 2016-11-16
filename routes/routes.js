@@ -5,17 +5,17 @@ export default function ($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('default', {
             url: '/?token',
-            template: '<hello-world author="{{launch.data.author}}"></hello-world>',
+            template: '<hello-world></hello-world>',
             controller: stateController,
             controllerAs: 'launch'
         })
         .state('default.home', {
             url: '/home',
-            templateUrl: '../components/hello-world/homePage.html'
+            templateUrl: '../components/hello-world/home-page.html'
         })
         .state('default.login', {
             url: '/login',
-            templateUrl: '../components/hello-world/loginForm.html'
+            templateUrl: '../components/hello-world/login-form.html'
         })
         .state('default.forget', {
             url: '/forget',
@@ -23,15 +23,15 @@ export default function ($stateProvider, $urlRouterProvider) {
         })
         .state('default.Step-1', {
             url: '/Step-1',
-            templateUrl: '../components/hello-world/Step_1.html'
+            templateUrl: '../components/hello-world/step-one.html'
         })
         .state('default.Step-2', {
             url: '/Step-2',
-            templateUrl: '../components/hello-world/Step_2.html'
+            templateUrl: '../components/hello-world/step-two.html'
         })
         .state('default.Step-3', {
             url: '/Step-3',
-            templateUrl: '../components/hello-world/Step_3.html'
+            templateUrl: '../components/hello-world/step-three.html'
         })
         .state('default.registraion', {
             url: '/registraion',
@@ -39,7 +39,7 @@ export default function ($stateProvider, $urlRouterProvider) {
         })
         .state('default.registationDone', {
             url: '/registationDone',
-            templateUrl: '../components/hello-world/registationDone.html'
+            templateUrl: '../components/hello-world/registation-done.html'
         })
 }
 

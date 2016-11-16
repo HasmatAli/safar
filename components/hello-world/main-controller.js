@@ -1,8 +1,8 @@
-require('./hello-world.scss');
-require('../../compositions/commons/materialize.min');
+require('./pages-style.scss');
+require('../../routes/commons/materialize.min');
 
 export default {
-    template: require('./homePage.html'),
+    template: require('./home-page.html'),
     controller: helloWorldController
 };
 

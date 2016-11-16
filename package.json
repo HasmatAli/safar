@@ -1,7 +1,7 @@
 {
   "name": "safar",
   "version": "1.0.0",
-  "description": "my app",
+  "description": "This is a ticket booking site that work on PC as well as on hand held devices also",
   "main": "index.js",
   "scripts": {
     "postinstall": "bower install",
@@ -19,7 +19,6 @@
   "dependencies": {
     "airports": "^1.0.0",
     "angular-material": "^1.1.1",
-    "api-check": "7.5.5",
     "bootstrap": "^3.3.7",
     "express": "^3.20.2",
     "materialize-css": "^0.97.7",
@@ -29,7 +28,6 @@
     "babel-core": "^6.17.0",
     "babel-plugin-add-module-exports": "0.1.1",
     "babel-preset-es2015": "6.3.13",
-    "ng-autocomplete": "^1.0.0",
     "webpack-angularity-solution": "^1.2.0"
   }
 }
