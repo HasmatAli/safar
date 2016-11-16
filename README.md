@@ -1,4 +1,6 @@
 # safar
+         ============================================ Information to run this app ============================================
+
 Flight booking app
 
 1) First of all install all dependencies of package.json and bower.json file to give commond 
